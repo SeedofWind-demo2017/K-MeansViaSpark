@@ -3,7 +3,7 @@
 
 --------- 
 
-    @SeedofWind @Cogle @Mengnalin
+    @SeedofWind @Cogle
 
 #### Introduction
 
@@ -37,7 +37,7 @@ Clustering algorithms can be applied in many fields, for instance:
 ------
 In this project, we implement an iterative algorithm (simple K-means) via **Spark** that solves the clustering problem in a parallel fashion. Details about K-means algorithm and the reason why we chose Spark will be discussed later.
 
-================
+
 
 #### High-level k-Means Algorithm
 -----
@@ -69,7 +69,7 @@ K-means in a "mapreduce" context is a little bit more invovled but goes as follo
 * Run this whole thing until nothing was updated anymore.
 
 
-================
+
 
 #### Spark Implementation (Python Wrapper)
 
@@ -78,7 +78,7 @@ Moreover, Spark is a important tool to learn, since essentially, it is more gene
 
 Specifically, we use the python wrapper to interact with spark. THis is because we are more famialiar with python compared to scala. While funcional language is something on my list to learn. For now, i ma gonna stay in my comfort zone.
 
-===============
+
 
 #### Results & Discussion
 
@@ -120,7 +120,6 @@ Here we implement a function to retrieve latitude and longitude of every record 
  
  **Cluster and Visualize the [Device Status data](./step3.Input/filteredStatus.csv)**
 
-====
 
 1.  k = 5 DistanceMethod = GreatCircle
 
@@ -150,8 +149,6 @@ Here we implement a function to retrieve latitude and longitude of every record 
 ###### part@2-Synthetic Data
 
 *Cluster and Visualize the [Syntheic Geo data](./step3.input/step2.sample_geo.csv)*
-
-====
 
 K-means clustering on this data converges nicely with a converge distance 0.1 (unlike the global data that contain points seperates further apart). We clustered it into 4 clusters (k=4) via both Euclidean Distance and Greate Circle Distance .
 
@@ -184,10 +181,6 @@ K-means clustering on this data converges nicely with a converge distance 0.1 (u
 ###### part@3-DBpedia Data
 
 *Cluster and Visualize the [DBpedia data](./step3.filteredAll.csv)*
-
-====
-
-
 
 1.  k = 2 DistanceMethod = GreatCircle
 
